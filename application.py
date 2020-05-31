@@ -3,4 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "inicio"
+    return "teste"
+
+
+app.run(host='0.0.0.0', debug=True)
