@@ -3,5 +3,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "teste2"
+    return "teste3"
 
+@app.route("/novo")
+def novo():
+    return "novo"
