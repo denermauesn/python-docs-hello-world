@@ -1,5 +1,5 @@
 from flask import Flask
-from docs_validator import *
+from validate_docbr import CPF
 
 app = Flask(__name__)
 
@@ -9,4 +9,4 @@ def hello():
 
 @app.route("/cpfValidator/<cpf>")
 def cpfValidator(cpf):
-    return cpf_validator(cpf)
+    return str(CPF().validate(cpf))
