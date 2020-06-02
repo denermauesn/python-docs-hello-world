@@ -1,5 +1,4 @@
-from docs_validator import CPF
-
+from validate_docbr import CPF
 
 def cpf_validator(cpf):
-    return CPF().validate(cpf)
+    return str(CPF().validate(cpf))
